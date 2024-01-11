@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+ background-color:rgb(255, 178, 12);
+ font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+h2 {
+ text-align: center;
+ font-style:Verdana, Geneva, Tahoma, sans-serif
+ color: rgb(255, 255, 255);
+}
+
+form {
+ margin: 0 auto;
+ width: 300px;
+}
+
+label {
+ font-weight: bold;
+}
+
+input[type=text],
+textarea {
+ width: 100%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ box-sizing: border-box;
+}
+
+input[type=submit] {
+ background-color: #4CAF50;
+ color: white;
+ padding: 14px 20px;
+ margin: 8px 0;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+}
+
+input[type=submit]:hover {
+ opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+
+<h2>Contact Form</h2>
+
+<form action="/submit_form" method="post">
+ <label for="fname">First Name:</label><br>
+ <input type="text" id="fname" name="fname"><br>
+ <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+ <label for="email">Gender</label><br><br>
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="male">Male</label><br>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label><br><br>
+ <label for="email">Email:</label><br>
+ <input type="text" id="email" name="email"><br>
+ <label for="subject">Subject:</label><br>
+ <textarea id="subject" name="subject" style="height:200px"></textarea><br>
+ <input type="submit" value="Submit">
+ <a href="welcome.html">Click Here</a>
+</form> 
+
+</body>
+</html>
